@@ -1,0 +1,31 @@
+@mixin uc {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@mixin sideline($width, $brightness) {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: $width;
+    background: lighten($color: $dark-color, $amount: $brightness);
+  }
+}
+
+@mixin underline($height, $brightness) {
+  position: relative;
+  padding-bottom: 1rem;
+
+  &::after {
+    content: '';
+    height: $height;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: lighten($color: $dark-color, $amount: $brightness);
+  }
+}

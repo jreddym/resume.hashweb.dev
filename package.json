@@ -1,0 +1,19 @@
+{
+  "name": "resume_hashweb.dev",
+  "version": "1.0.0",
+  "description": "Resume of M Jagadeeswara Reddy Full Stack Developer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "firebase": "^7.23.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
